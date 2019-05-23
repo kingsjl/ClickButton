@@ -35,10 +35,11 @@ NOTE!
  
  You should have received a copy of the GNU General Public License
  along with this program.  If not, see <http://www.gnu.org/licenses/>.
-
+Contact: jialong.kuang@ubtrobot.com
  Contact: raronzen@gmail.com
 
  History:
+ 2019.05.23 - Add Long Press Hold Function
  2013.08.29 - Some small clean-up of code, more sensible variable names etc.
                 Added another example code for multiple buttons in an object array
  2013.04.23 - A "minor" debugging: active-high buttons now work (wops)!
@@ -138,7 +139,7 @@ void ClickButton::Update()
   if (depressed && (now - _lastBounceTime > longClickTime))
   {
     // negative count for long clicks
-    clicks = 0 - _clickCount;
+    clicks = -1;
     _clickCount = 0;
   }
 
