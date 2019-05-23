@@ -1,5 +1,6 @@
 ClickButton
 ===========
+- May 2019, Add Long Press Hold Function
 - Jan 2016, update to Libraries 2.0
 
 A library that decodes multiple clicks on one button. Also copes with 
